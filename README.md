@@ -14,6 +14,7 @@ service postgresql start
 ```
 - test connection and create database
 ```
+service postgresql status
 su - postgres
 psql CREATE DATABASE dummyvim2
 ```
@@ -27,5 +28,6 @@ goto: http://localhost:1234/add?a=1&b=4
 Helpful sources:
 https://bosnadev.com/2015/12/15/allow-remote-connections-postgresql-database-server/
 https://www.howtoforge.com/tutorial/ubuntu-ruby-on-rails/
+https://github.com/filewatcher/filewatcher
 
 geh!
