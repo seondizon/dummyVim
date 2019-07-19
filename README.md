@@ -29,5 +29,6 @@ Helpful sources:
 https://bosnadev.com/2015/12/15/allow-remote-connections-postgresql-database-server/
 https://www.howtoforge.com/tutorial/ubuntu-ruby-on-rails/
 https://github.com/filewatcher/filewatcher
+http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 
 geh!
