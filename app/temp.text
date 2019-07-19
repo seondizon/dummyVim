@@ -1,0 +1,48 @@
+gem install ansible_spec &&
+gem install bigdecimal &&
+gem install builder &&
+gem install diff-lcs &&
+gem install erubis &&
+gem install ffi &&
+gem install gssapi &&
+gem install gyoku &&
+gem install hostlist_expression &&
+gem install httpclient &&
+gem install inifile &&
+gem install io-console &&
+gem install json &&
+gem install json-schema &&
+gem install little-plugger &&
+gem install logging &&
+gem install multi_json &&
+gem install net-scp &&
+gem install net-ssh &&
+gem install net-telnet &&
+gem install nori &&
+gem install oj &&
+gem install psych &&
+gem install rake &&
+gem install rdoc &&
+gem install rspec &&
+gem install rspec-core &&
+gem install rspec-expectations &&
+gem install rspec-its &&
+gem install rspec-mocks &&
+gem install rspec-support &&
+gem install rubyntlm &&
+gem install serverspec &&
+gem install sfl &&
+gem install specinfra &&
+gem install winrm
+
+docker-machine --native-ssh create -d virtualbox --engine-env HTTP_PROXY=http://dizon.jm:6BRjmCp1r6@172.28.58.132:3128 --engine-env HTTPS_PROXY=https://dizon.jm:6BRjmCp1r6@proxy:3128 default
+
+--env HTTP_PROXY="http://dizon.jm:6BRjmCp1r6@proxy:3128"
+
+
+docker run -d -p 5430:5432 -p 8080:80 -p 1234:1234 --name uws -e POSTGRES_PASSWORD=root --env HTTP_PROXY="http://dizon.jm:6BRjmCp1r6@proxy:3128" -v $(pwd):/home postgres
+
+ENV http_proxy http://dizon.jm:6BRjmCp1r6@proxy:3128
+ENV https_proxy http://dizon.jm:6BRjmCp1r6@proxy:3128
+
+docker run -dit -p 5432:5432 -p 15000:15000 -p 19696:19696 -p 18774:18774 -p 19292:19292 -p 18776:18776 -p 18777:18777 -p 18779:18779 -p 1234:1234  -v $(pwd)/Dummy_VIM:/home --name dummy_queens dummy_workstation
