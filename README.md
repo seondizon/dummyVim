@@ -32,3 +32,5 @@ https://github.com/filewatcher/filewatcher
 http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 
 geh!
+
+source /usr/local/rvm/scripts/rvm
