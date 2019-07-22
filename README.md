@@ -4,10 +4,11 @@
 - files available on /home directory linked to /app directory of host
 ```
 cd dummyVim
-docker build -t dummyvim_build .
-docker run -dit -v $(pwd)/app:/home --name=dummy -p 8888:80 -p 1234:1234 dummyvim_build
+docker build -t dummyvim .
+docker run -dit -v $(pwd)/app:/home --name=dummy -p 8888:80 -p 5432:5432 seondizon/dummyvim
 docker exec -it dummy bash
 ```
+- source /usr/local/rvm/scripts/rvm
 - start the postgres service
 ```
 service postgresql start
@@ -33,4 +34,4 @@ http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 
 geh!
 
-source /usr/local/rvm/scripts/rvm
+
