@@ -8,9 +8,9 @@ docker build -t dummyvim .
 docker run -dit -v $(pwd)/app:/home --name=dummy -p 8888:80 -p 5432:5432 seondizon/dummyvim
 docker exec -it dummy bash
 ```
-- source /usr/local/rvm/scripts/rvm
-- start the postgres service
+- source rvm and start the postgres service
 ```
+source /usr/local/rvm/scripts/rvm
 service postgresql start
 ```
 - test connection and create database
