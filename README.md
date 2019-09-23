@@ -35,3 +35,8 @@ http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 geh!
 
 
+==== 
+pull seondizon/dummy
+docker run -dit --name dummy --privileged dummy /usr/sbin/init
+
+
