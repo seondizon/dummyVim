@@ -32,6 +32,8 @@ https://www.howtoforge.com/tutorial/ubuntu-ruby-on-rails/
 https://github.com/filewatcher/filewatcher
 http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-centos-7
+
 geh!
 
 
