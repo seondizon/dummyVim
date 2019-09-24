@@ -42,3 +42,10 @@ pull seondizon/dummy
 docker run -dit --name dummy --privileged dummy /usr/sbin/init
 
 
+systemctl list-unit-files | grep postgres
+
+systemctl enable postgresql-9.4.service
+
+systemctl start postgresql-9.4.servi
+
+
